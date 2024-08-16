@@ -4,7 +4,8 @@ Este projeto é uma aplicação desenvolvida com Laravel para visualizar uma tab
 
 ## Para executar a aplicaçação
 
-- Certifique-se de possuir o [PHP 8.2](https://www.php.net/downloads), [Composer](https://getcomposer.org/download/) e [Laravel 11.20](https://laravel.com/docs/11.x/installation) instalados na sua máquina.
+- Certifique-se de possuir o PHP 8.2.12 instalado pelo [XAMPP](https://www.apachefriends.org/download.html), [Composer](https://getcomposer.org/download/) e [Laravel 11.20](https://laravel.com/docs/11.x/installation) instalados na sua máquina.
+- Para evitar qualquer erro, entre no arquivo php.ini que está na php, dentro da pasta xampp no disco local C, e habilite ```extension=zip``` e ```extension=fileinfo```
 
 1. **Clone o repositório**: ```git clone https://github.com/jpsalles21/laravel-user-management.git```
 
@@ -12,7 +13,7 @@ Este projeto é uma aplicação desenvolvida com Laravel para visualizar uma tab
 
 3. **Instale as dependências**: ```composer install```
 
-4. **Configure o arquivo .env**: ```cp .env.example .env```
+4. **Copie o arquivo .env**: ```cp .env.example .env``` no Linux. Para o windows, copie o arquivo .env.example e renomeie para .env
 
 5. **Gere a chave de aplicação**: ```php artisan key:generate```
 
